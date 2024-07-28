@@ -4,7 +4,7 @@
 PlantDoc is an AI-driven tool that leverages a dataset of over 56,000 images across 38 plant species to detect plant diseases at an early stage. This project aims to significantly reduce crop losses and enhance agricultural productivity, transforming the way farmers and agronomists approach plant health management.
 
 ## Model
-Our model is trained using transfer learning on the VGG16 architecture. It is capable of identifying 38 different plant diseases, making it a comprehensive tool for plant health management.
+Our model is trained using transfer learning on the VGG16 architecture. It is capable of identifying 38 different plant diseases, making it a comprehensive tool for plant health management. You can find the detailed training process and the code in our [Kaggle Notebook](https://www.kaggle.com/code/sakshamrajbhandari/plantdoc).
 
 ## Team
 This project was created during the Computing and Informatics class (CI-102 AND CI-103) by a team of four dedicated students:
