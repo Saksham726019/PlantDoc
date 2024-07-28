@@ -1,4 +1,5 @@
-var socket = new WebSocket('ws://127.0.0.1:8070/ws');  // specify the WebSocket URL of your FastAPI server here
+// Initialize WebSocket (remove if not using WebSocket for this part)
+// var socket = new WebSocket('ws://127.0.0.1:8070/ws');
 
 document.getElementById('selectImage').addEventListener('click', function() {
     var fileInput = document.getElementById('fileInput');
@@ -15,25 +16,25 @@ document.getElementById('fileInput').addEventListener('change', function() {
     img.src = URL.createObjectURL(file);
     img.style.display = 'block';
 
-    fetch('http://127.0.0.1:8070/predict', {  // specify the URL of your FastAPI server here
+    fetch('http://127.0.0.1:8070/predict', {  // URL of the FastAPI server
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())  // Parse the response as JSON
+    .then(response => response.json())
     .then(result => {
         console.log('Result:', result);
 
-        // Check if the result contains a 'message' property
+        // Update the result element
+        var resultElement = document.getElementById('predictionResult');  // Correct ID
         if (result.message) {
-            // If it does, display the message
-            document.getElementById('result').textContent = result.message;
+            resultElement.textContent = result.message;
         } else {
-            // Ensure the confidence does not exceed 100%
-            var confidence = Math.min(result.confidence, 100);
-            // Format the confidence to 2 decimal places
-            confidence = confidence.toFixed(2);
-            // Display the prediction and confidence in the desired format
-            document.getElementById('result').innerHTML = "This is " + result.prediction + ".<br>Confidence: " + confidence + "%";
+            var confidence = Math.min(result.confidence * 100, 100).toFixed(2);
+            resultElement.innerHTML = "This is " + result.predicted_class + ".<br>Confidence: " + confidence + "%";
         }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('predictionResult').textContent = "Error processing the image.";
     });
 });

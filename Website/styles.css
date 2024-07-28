@@ -132,19 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block; /* Ensures the video is displayed as a block-level element */
 }
 
-/* Hide Video Controls */
-video::-webkit-media-controls {
-  display: none;
-}
-
-video::-moz-video-controls {
-  display: none;
-}
-
-video::--webkit-media-controls {
-  display: none;
-}
-
 video:focus {
   outline: none; /* Removes outline on focus for cleaner look */
 }
