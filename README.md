@@ -1,1 +1,1 @@
-# PlantDoc
+# PlantDoc : Harvesting Hope with AI
