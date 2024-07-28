@@ -1,17 +1,24 @@
-# PlantDoc : Harvesting Hope with AI
+# PlantDoc: Harvesting Hope with AI 🌱
 
-Project Description
-PlantDoc is an AI-powered tool designed to enhance the detection and diagnosis of plant diseases. By utilizing a dataset of over 56,000 images covering 38 different plant species, PlantDoc employs state-of-the-art transfer learning techniques with the VGG16 model. This enables the accurate identification of plant diseases, providing an essential resource for farmers and agronomists to manage crop health more effectively.
+## Overview
+PlantDoc is an AI-driven tool that leverages a dataset of over 56,000 images across 38 plant species to detect plant diseases at an early stage. This project aims to significantly reduce crop losses and enhance agricultural productivity, transforming the way farmers and agronomists approach plant health management.
 
-Key Features:
-Comprehensive Dataset: Utilizes a diverse dataset for robust disease detection.
-Advanced AI Techniques: Leverages VGG16 for high accuracy in disease classification.
-Impactful Application: Aims to reduce crop losses and improve agricultural productivity through early disease detection.
-Team:
-This project was developed as part of the Computing and Informatics classes (CI-102 and CI-103) by:
+## Model
+Our model is trained using transfer learning on the VGG16 architecture. It is capable of identifying 38 different plant diseases, making it a comprehensive tool for plant health management.
 
-Saksham Rajbhandari (Lead Developer)
-Krithi Hari
-Naman Bajpai
-Manish Gurung
+## Team
+This project was created during the Computing and Informatics class (CI-102 AND CI-103) by a team of four dedicated students:
 
+- Saksham Rajbhandari
+- Krithi Hari
+- Naman Bajpai
+- Manish Gurung
+
+## Future Work
+We will soon feature an LLM to give more details about the disease's symptoms and potential cures.
+
+## Acknowledgements
+We would like to express our gratitude to our professors and peers in the Computing and Informatics class for their support and guidance throughout the development of this project.
+
+## License
+This project is licensed under the terms of the MIT license.
