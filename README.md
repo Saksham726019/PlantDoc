@@ -21,4 +21,4 @@ We will soon feature an LLM to give more details about the disease's symptoms an
 We would like to express our gratitude to our professors and peers in the Computing and Informatics class for their support and guidance throughout the development of this project.
 
 ## License
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the Apache-2.0 license.
