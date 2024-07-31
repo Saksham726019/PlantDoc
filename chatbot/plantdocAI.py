@@ -8,7 +8,7 @@ from uuid import uuid4
 import secrets
 
 # Configure the Gemma API key
-os.environ["GEMMA_API_KEY"] = "<API_KEY>"
+os.environ["GEMMA_API_KEY"] = "AIzaSyAb6wQ5hIITUe3vG2NUEZIdp59vRJpDgKk"
 genai.configure(api_key=os.environ['GEMMA_API_KEY'])
 
 model = genai.GenerativeModel()
