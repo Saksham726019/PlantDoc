@@ -72,6 +72,28 @@ a:hover {
   text-underline-offset: 3px; /* Distance between text and underline */
 }
 
+.message-button {
+    position: fixed;
+    bottom: 90px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #177356;
+    background-image: url('../img/message-icon.png');
+    background-size: contain;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.message-button:hover {
+    background-color: #145e42;
+}
+
 .person img {
   display: block; /* Makes the image a block-level element to allow centering */
   margin: 0 auto; /* Centers the image horizontally */
