@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ebe1e1;
+    color: #ebe1e1;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    margin-top: -20px;
+    background-color: #ebe1e1;
+    text-align: center;  /* Center align the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    height: 70px;  /* Adjust the height as needed */
+    margin-bottom: -10px;
+    margin-right: -8px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 42px;
+    color: #177356;
+    position: relative;  /* Changed from absolute to relative */
+    top: 35px;  /* Adjust this value to move the title down */
+    margin-right: 50px;
+    font-family:"Concert One";
+}
+
+.subtitle-container {
+    margin-top: 40px;  /* Add space between title and subtitle */
+    margin-right: 30px;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;  /* Lighter color for the subtitle */
+    font-family:"Concert One";
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe1e1;
+    overflow: hidden;
+    padding-top: 20px;  /* Added padding to move the chat box up */
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: #177356;
+    margin: 0 10px 20px 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #177356;
+    color: white;
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.message.shampoo-sense {
+    background-color: #444;
+    color: white;
+    align-self: flex-end;
+    margin-right: auto;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #177356;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    resize: none;
+    background-color: #ebe1e1;
+    color: #000000;
+}
+
+.send-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #292626;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantDoc AI</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="plantdocAI.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/plantdoc.png" alt="Logo" class="logo">
+        <div class="title-container">
+            <h1 class="title">PlantDoc AI</h1>
+            <div class="subtitle-container">
+                <h2 class="subtitle">Your Plant's Companion</h2>
+            </div>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-container">
+            <textarea id="user-input" class="user-input" placeholder="Type your message here... (AI can make mistakes)"></textarea>
+            <button id="send-btn" class="send-btn">Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
