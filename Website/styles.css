@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  line-height: 1.2;
+  color: #555555;
+}
+
+/* HEADER STYLES */
+header {
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center;
+  padding: 0.25rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
+body {
+  padding-top: 120px; /* Height of the header */
+  overflow-y: scroll; /* Ensures scrollbar is always shown to prevent layout shifts */
+}
+
+/* LOGO STYLES */
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* NAVIGATION STYLES */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+/* LINK STYLES */
+a {
+  color: green; /* Primary text color */
+  text-decoration: none; /* No underline by default */
+  transition: color 300ms ease, text-shadow 300ms ease; /* Smooth transition for color and shadow */
+  position: relative; /* Required for pseudo-element positioning */
+  display: inline-block; /* Allows the use of padding and width/height */
+  padding: 0.25rem; /* Space around the link text for better clickability */
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Hover State */
+a:hover {
+  color: greenyellow; /* Color change on hover */
+  text-decoration: underline; /* Underline on hover for visual cue */
+  text-decoration-thickness: 2px; /* Makes the underline thicker */
+  text-underline-offset: 3px; /* Distance between text and underline */
+}
+
+.person img {
+  display: block; /* Makes the image a block-level element to allow centering */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 150px; /* Sets a fixed width */
+  height: 150px; /* Sets a fixed height to maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without losing aspect ratio */
+}
+
+/* Specific styles for displayImage */
+#displayImage {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 20px 0 20px 20px;;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* BUTTON STYLES */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #353535;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+/* SECTIONS STYLES */
+section {
+  padding: 5vh 10vw;
+}
+
+/* TYPOGRAPHY ENHANCEMENTS */
+h1, h2, h3, h4, h5, h6 {
+  color: darkgreen;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2vh 0;
+}
+
+/* Updated Video Styles */
+.video-section video {
+  width: 100%; /* Ensures video is responsive and matches the parent's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the video is displayed as a block-level element */
+}
+
+video:focus {
+  outline: none; /* Removes outline on focus for cleaner look */
+}
+
+
+/* RESPONSIVE IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER STYLES */
+footer {
+  padding: 4vh 0;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+footer p {
+  color: #353535;
+}
+
+/* RESPONSIVE STYLES FOR MOBILE AND TABLET */
+@media (max-width: 768px) {
+  .nav-links,
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 5vh 5vw;
+  }
+
+  .logo {
+    width: 120px; /* Smaller logo for mobile */
+  }
+}
+
+/* Ensure you test these styles across various devices to maintain responsiveness and adjust any values according to your design requirements. */

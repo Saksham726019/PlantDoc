@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantDoc - Harvesting Hope with AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="plantdoc.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/plantdoc.png" alt="PlantDoc Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="model.html">Our Model</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Plant Disease Detection</h1>
+            <p>Harvesting Hope, One Leaf at a Time – Turning Data into Growth!</p>
+            <!-- Hidden file input for image upload -->
+            <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+            <!-- Button to trigger file input click -->
+            <button class="btn primary" id="selectImage">Select an Image</button>
+            <!-- Image element for displaying the selected image -->
+            <img id="displayImage" alt="User's image" src="" style="display: none;">
+            <!-- Container for displaying prediction results -->
+            <div id="predictionResult"></div>
+        </section>
+
+        <section class="innovation">
+            <h2>Let's grow together, one innovation at a time</h2>
+            <p>
+                Imagine leveraging PlantDoc's extensive dataset,
+                featuring over 2,500 images across 13 plant species, to
+                create an AI-driven tool for early plant disease
+                detection. This innovation promises to significantly
+                reduce crop losses and enhance agricultural
+                productivity, transforming the way farmers and
+                agronomists approach plant health management.
+            </p>
+        </section>
+        <section class="about">
+            <h2>About Plant Disease Detector</h2>
+            <p>
+                Plant Disease Detector is an innovative AI-driven
+                solution aimed at detecting and diagnosing plant
+                diseases accurately and efficiently. Our mission is to
+                empower farmers and agricultural experts with
+                cutting-edge technology to ensure healthy crop yields
+                and sustainable farming practices.
+            </p>
+        </section>
+        <footer>
+            <p>© 2024 PlantDoc - Innovating for a greener future.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
